@@ -1,9 +1,26 @@
 from tkinter import *
+import json
 
 window = Tk()
 window.title("Unit Converter")
 
 large_font = ('Verdana',30)
+
+
+#Function for length unit
+def length(first, second):
+    global first_unit, second_unit, v, res
+    with open("units.json", "r") as f:
+        res = json.load(f)
+        res = res['units']['length']
+    get_value = res[first][second]
+    ans = float(first_unit.get()) * float(get_value)
+    v.set(str(ans))
+
+def unit_conversion(unit, first, second):
+    if unit == "length":
+        length(first, second)
+
 #A drop down to select the units to work with
 units = StringVar()
 units.set("length")
@@ -34,6 +51,7 @@ second_unit_container = OptionMenu(window, second_unit_val, 'kilometre', 'metre'
 second_unit_container.grid(row = 3, column = 2)
 
 
-
+btn = Button(window, text = "click", command = lambda: unit_conversion(units.get(),first_unit_val.get(), second_unit_val.get()))
+btn.grid(row = 4, column = 1)
 
 window.mainloop()

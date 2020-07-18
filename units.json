@@ -1,0 +1,58 @@
+{
+    "units":{
+        "length":{
+            "kilometre":{
+                "kilometre": 1,
+                "metre": 1000,
+                "centimetre": 100000
+            },
+            "metre":{
+                "kilometre": 0.001,
+                "metre": 1,
+                "centimetre": 100
+            },
+            "centimetre": {
+                "kilometre": "0.000001",
+                "metre": 0.01,
+                "centimetre": 1
+            }
+        },
+        "mass": {
+            "tonne":{
+                "tonne":1 ,
+                "kilogram": 1000, 
+                "gram": "1e+6" , 
+                "milligram": "1e+9", 
+                "pound": 2204.62
+            } , 
+            "kilogram": {
+                "tonne":0.001 ,
+                "kilogram": 1, 
+                "gram": 1000 , 
+                "milligram": "1e+6", 
+                "pound": 2.20462
+            } , 
+            "gram": {
+                "tonne":"1e-6" ,
+                "kilogram": 0.001, 
+                "gram": 1, 
+                "milligram": 1000, 
+                "pound": 0.00220462
+            } , 
+            "milligram": {
+                "tonne":"1e-9" ,
+                "kilogram": "1e-6", 
+                "gram": 0.001, 
+                "milligram": 1, 
+                "pound": "2.2046e-6"
+            } , 
+            "pound": {
+                "tonne":0.000453592 ,
+                "kilogram": 0.4535920000000000507, 
+                "gram": 453.592, 
+                "milligram": 453592, 
+                "pound": 1
+            }
+        }
+    }
+}

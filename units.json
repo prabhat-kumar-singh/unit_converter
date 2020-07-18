@@ -4,17 +4,65 @@
             "kilometre":{
                 "kilometre": 1,
                 "metre": 1000,
-                "centimetre": 100000
+                "centimetre": 100000,
+                "millimetre": "1e+6",
+                "micrometre": "1e+9",
+                "nanometre": "1e+12",
+                "mile": 0.621371
             },
             "metre":{
                 "kilometre": 0.001,
                 "metre": 1,
-                "centimetre": 100
+                "centimetre": 100,
+                "millimetre": 1000,
+                "micrometre": "1e+6",
+                "nanometre": "1e+9",
+                "mile": 0.000621371
             },
             "centimetre": {
                 "kilometre": "0.000001",
                 "metre": 0.01,
-                "centimetre": 1
+                "centimetre": 1,
+                "millimetre": 10,
+                "micrometre": 10000,
+                "nanometre": "1e+7",
+                "mile": "6.2137e-6"
+            },
+            "millimetre": {
+                "kilometre": "1e-6",
+                "metre": 0.001,
+                "centimetre": 0.1,
+                "millimetre": 1,
+                "micrometre": 1000,
+                "nanometre": "1e+6",
+                "mile": "6.2137e-7"
+            },
+            "micrometre": {
+                "kilometre": "1e-9",
+                "metre": "1e-6",
+                "centimetre": "1e-4",
+                "millimetre": 0.001,
+                "micrometre": 1,
+                "nanometre": 1000,
+                "mile": "6.2137e-10"
+            },
+            "nanometre": {
+                "kilometre": "1e-12",
+                "metre": "1e-9",
+                "centimetre": "1e-7",
+                "millimetre": "1e-6",
+                "micrometre": 0.001,
+                "nanometre": 1,
+                "mile": "6.2137e-13"
+            },
+            "mile": {
+                "kilometre":1.60934,
+                "metre": 1609.34,
+                "centimetre": 160934,
+                "millimetre": "1.609e+6",
+                "micrometre": "1.609e+9",
+                "nanometre": "1.609e+12",
+                "mile": 1
             }
         },
         "mass": {
@@ -52,6 +100,71 @@
                 "gram": 453.592, 
                 "milligram": 453592, 
                 "pound": 1
+            }
+        },
+        "time": {
+            "second": {
+                "second": 1,
+                "minute": 0.0166667,
+                "hour": 0.000277778,
+                "day": "1.1574e-5",
+                "millisecond": 1000,
+                "microsecond": "1e+6",
+                "nanosecond": "1e+9"
+            },
+            "minute":{
+                "second": 60,
+                "minute": 1,
+                "hour": 0.0166667,
+                "day": 0.000694444,
+                "millisecond": 60000,
+                "microsecond": "6e+7",
+                "nanosecond": "6e+10"
+            } ,
+            "hour": {
+                "second": 3600,
+                "minute": 60,
+                "hour": 1,
+                "day": 0.0416667,
+                "millisecond": "3.6e+6",
+                "microsecond": "3.6e+9",
+                "nanosecond": "3.6e+12"
+            },
+            "day": {
+                "second": 86400,
+                "minute": 1440,
+                "hour": 24,
+                "day": 1,
+                "millisecond": "8.64e+7",
+                "microsecond": "8.64e+10",
+                "nanosecond": "8.64e+13"
+            },
+            "millisecond": {
+                "second":0.001 ,
+                "minute": "1.6667e-5",
+                "hour":"2.7778e-7" ,
+                "day": "1.1574e-8",
+                "millisecond": 1,
+                "microsecond": 1000,
+                "nanosecond": "1e+6"
+            },
+            "microsecond": {
+                "second": "1e-6" ,
+                "minute": "1.6667e-8",
+                "hour": "2.7778e-10",
+                "day": "1.1574e-11",
+                "millisecond": 0.001,
+                "microsecond": 1,
+                "nanosecond": 1000
+            },
+            "nanosecond": {
+                "second": "1e-9",
+                "minute": "1.6667e-11",
+                "hour": "2.7778e-13",
+                "day": "1.1574e-14",
+                "millisecond": "1e-6",
+                "microsecond": 0.001,
+                "nanosecond": 1 
             }
         }
     }

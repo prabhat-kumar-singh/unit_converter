@@ -116,7 +116,7 @@ second_unit.grid(row = 2, column = 2)
 #calling function
 unit_dropdown(units.get())
 btn = Button(window, text = "OK", command = lambda: unit_dropdown(units.get()))
-btn.grid(row = 1, column = 2)
+btn.grid(row = 1, column = 1)
 
 btn = Button(window, text = "CLICK HERE", command = lambda: unit_conversion(units.get(),first_unit_val.get(), second_unit_val.get()))
 btn.grid(row = 4, column = 1)

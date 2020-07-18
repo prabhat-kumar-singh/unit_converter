@@ -86,6 +86,15 @@ def temperature(first, second):
             ans = 1
        v.set(str(ans))
 
+def time_unit(first, second): 
+    global first_unit, second_unit, v, res
+
+    with open("units.json", "r") as f:
+        res = json.load(f)
+        res = res['units']['time']
+    get_value = res[first][second]
+    ans = float(first_unit.get()) * float(get_value)
+    v.set(str(ans))
 
 def unit_conversion(unit, first, second):
     if unit == "length":
@@ -94,6 +103,8 @@ def unit_conversion(unit, first, second):
         mass(first, second)
     elif unit == "temperature":
         temperature(first, second)
+    elif unit == "time":
+        time_unit(first, second)
 
 #A drop down to select the units to work with
 units = StringVar()
